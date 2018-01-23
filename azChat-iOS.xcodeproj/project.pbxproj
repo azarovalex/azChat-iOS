@@ -12,9 +12,13 @@
 		DF7A90352017C947000CBC3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90332017C947000CBC3F /* Main.storyboard */; };
 		DF7A90372017C947000CBC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90362017C947000CBC3F /* Assets.xcassets */; };
 		DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90382017C947000CBC3F /* LaunchScreen.storyboard */; };
+		DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE512017D7E600610EEB /* SWRevealViewController.m */; };
+		E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093F95227BB6480EFF420C08 /* Pods-azChat-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-azChat-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-azChat-iOS/Pods-azChat-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3E748BA3B03C69263998B09C /* Pods-azChat-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-azChat-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-azChat-iOS/Pods-azChat-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DF7A902C2017C947000CBC3F /* azChat-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "azChat-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7A902F2017C947000CBC3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF7A90312017C947000CBC3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		DF7A90362017C947000CBC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF7A90392017C947000CBC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF7A903B2017C947000CBC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "azChat-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFBDCE502017D7E600610EEB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		DFBDCE512017D7E600610EEB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22ECEF08DE0134222F1F265E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				093F95227BB6480EFF420C08 /* Pods-azChat-iOS.debug.xcconfig */,
+				3E748BA3B03C69263998B09C /* Pods-azChat-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40B0AFE8B47FDEEDF32B6609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF7A90232017C947000CBC3F = {
 			isa = PBXGroup;
 			children = (
 				DF7A902E2017C947000CBC3F /* azChat-iOS */,
 				DF7A902D2017C947000CBC3F /* Products */,
+				22ECEF08DE0134222F1F265E /* Pods */,
+				40B0AFE8B47FDEEDF32B6609 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,7 @@
 		DF7A902E2017C947000CBC3F /* azChat-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DFBDCE4E2017D7A800610EEB /* Supporting Files */,
 				DF7A902F2017C947000CBC3F /* AppDelegate.swift */,
 				DF7A90312017C947000CBC3F /* ViewController.swift */,
 				DF7A90332017C947000CBC3F /* Main.storyboard */,
@@ -64,6 +93,16 @@
 			path = "azChat-iOS";
 			sourceTree = "<group>";
 		};
+		DFBDCE4E2017D7A800610EEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFBDCE502017D7E600610EEB /* SWRevealViewController.h */,
+				DFBDCE512017D7E600610EEB /* SWRevealViewController.m */,
+				DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF7A903E2017C947000CBC3F /* Build configuration list for PBXNativeTarget "azChat-iOS" */;
 			buildPhases = (
+				2015B433798F56C50C72E6BB /* [CP] Check Pods Manifest.lock */,
 				DF7A90282017C947000CBC3F /* Sources */,
 				DF7A90292017C947000CBC3F /* Frameworks */,
 				DF7A902A2017C947000CBC3F /* Resources */,
+				4D16A0C40E8A2F0DD4083A5B /* [CP] Embed Pods Frameworks */,
+				9B7910CCDF1E7A604337E3CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +138,7 @@
 				TargetAttributes = {
 					DF7A902B2017C947000CBC3F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +174,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2015B433798F56C50C72E6BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-azChat-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D16A0C40E8A2F0DD4083A5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-azChat-iOS/Pods-azChat-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-azChat-iOS/Pods-azChat-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7910CCDF1E7A604337E3CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-azChat-iOS/Pods-azChat-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF7A90282017C947000CBC3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +241,7 @@
 			files = (
 				DF7A90322017C947000CBC3F /* ViewController.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
+				DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +376,18 @@
 		};
 		DF7A903F2017C947000CBC3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 093F95227BB6480EFF420C08 /* Pods-azChat-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
 				INFOPLIST_FILE = "azChat-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.azChat-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "azChat-iOS/Supporting Files/azChat-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +395,17 @@
 		};
 		DF7A90402017C947000CBC3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E748BA3B03C69263998B09C /* Pods-azChat-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
 				INFOPLIST_FILE = "azChat-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.azChat-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "azChat-iOS/Supporting Files/azChat-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
