@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A902F2017C947000CBC3F /* AppDelegate.swift */; };
-		DF7A90322017C947000CBC3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A90312017C947000CBC3F /* ViewController.swift */; };
 		DF7A90352017C947000CBC3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90332017C947000CBC3F /* Main.storyboard */; };
 		DF7A90372017C947000CBC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90362017C947000CBC3F /* Assets.xcassets */; };
 		DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90382017C947000CBC3F /* LaunchScreen.storyboard */; };
 		DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE512017D7E600610EEB /* SWRevealViewController.m */; };
+		DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE562017EF2400610EEB /* ChatVC.swift */; };
+		DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE582017EF3100610EEB /* ChannelVC.swift */; };
 		E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +22,6 @@
 		3E748BA3B03C69263998B09C /* Pods-azChat-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-azChat-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-azChat-iOS/Pods-azChat-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DF7A902C2017C947000CBC3F /* azChat-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "azChat-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7A902F2017C947000CBC3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF7A90312017C947000CBC3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF7A90342017C947000CBC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF7A90362017C947000CBC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF7A90392017C947000CBC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,8 @@
 		DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "azChat-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFBDCE502017D7E600610EEB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DFBDCE512017D7E600610EEB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DFBDCE562017EF2400610EEB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		DFBDCE582017EF3100610EEB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,9 +84,11 @@
 		DF7A902E2017C947000CBC3F /* azChat-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DFBDCE552017EF0700610EEB /* Model */,
+				DFBDCE542017EEFC00610EEB /* View */,
+				DFBDCE532017EEF500610EEB /* Controller */,
 				DFBDCE4E2017D7A800610EEB /* Supporting Files */,
 				DF7A902F2017C947000CBC3F /* AppDelegate.swift */,
-				DF7A90312017C947000CBC3F /* ViewController.swift */,
 				DF7A90332017C947000CBC3F /* Main.storyboard */,
 				DF7A90362017C947000CBC3F /* Assets.xcassets */,
 				DF7A90382017C947000CBC3F /* LaunchScreen.storyboard */,
@@ -101,6 +105,29 @@
 				DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFBDCE532017EEF500610EEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFBDCE562017EF2400610EEB /* ChatVC.swift */,
+				DFBDCE582017EF3100610EEB /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFBDCE542017EEFC00610EEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFBDCE552017EF0700610EEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7A90322017C947000CBC3F /* ViewController.swift in Sources */,
+				DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */,
+				DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
 				DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */,
 			);
