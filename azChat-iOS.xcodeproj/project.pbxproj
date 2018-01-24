@@ -14,6 +14,7 @@
 		DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE512017D7E600610EEB /* SWRevealViewController.m */; };
 		DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE562017EF2400610EEB /* ChatVC.swift */; };
 		DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE582017EF3100610EEB /* ChannelVC.swift */; };
+		DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE5A2017FD9F00610EEB /* GradientView.swift */; };
 		E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		DFBDCE512017D7E600610EEB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DFBDCE562017EF2400610EEB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		DFBDCE582017EF3100610EEB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		DFBDCE5A2017FD9F00610EEB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 		DFBDCE542017EEFC00610EEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DFBDCE5A2017FD9F00610EEB /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */,
 				DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */,
+				DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
 				DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */,
 			);
