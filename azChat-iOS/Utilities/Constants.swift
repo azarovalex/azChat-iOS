@@ -8,7 +8,19 @@
 
 import Foundation
 
+typealias CompletionHandler = (_ success: Bool) -> Void
+
+// URL Constants
+// let BASE_URL = "http://localhost:3005/v1/"
+let BASE_URL = "https://az-chat.herokuapp.com/v1/"
+
+
 // Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND_TO_CHANNEL = "unwinedToChannel"
+
+// User Defaults
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"

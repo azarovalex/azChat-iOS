@@ -12,7 +12,8 @@
 		DF7A90372017C947000CBC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90362017C947000CBC3F /* Assets.xcassets */; };
 		DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90382017C947000CBC3F /* LaunchScreen.storyboard */; };
 		DF828305201A53160020421C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF828304201A53160020421C /* CreateAccountVC.swift */; };
-		DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE512017D7E600610EEB /* SWRevealViewController.m */; };
+		DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A758201BA9F00015D550 /* AuthService.swift */; };
+		DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE512017D7E600610EEB /* SWRevealViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE562017EF2400610EEB /* ChatVC.swift */; };
 		DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE582017EF3100610EEB /* ChannelVC.swift */; };
 		DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE5A2017FD9F00610EEB /* GradientView.swift */; };
@@ -31,6 +32,7 @@
 		DF7A90392017C947000CBC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF7A903B2017C947000CBC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF828304201A53160020421C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		DFA5A758201BA9F00015D550 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "azChat-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFBDCE502017D7E600610EEB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DFBDCE512017D7E600610EEB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		DF7A902E2017C947000CBC3F /* azChat-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DFA5A757201BA9D30015D550 /* Services */,
 				DFD014D6201A1F0100802771 /* Utilities */,
 				DFBDCE552017EF0700610EEB /* Model */,
 				DFBDCE542017EEFC00610EEB /* View */,
@@ -104,6 +107,14 @@
 				DF7A903B2017C947000CBC3F /* Info.plist */,
 			);
 			path = "azChat-iOS";
+			sourceTree = "<group>";
+		};
+		DFA5A757201BA9D30015D550 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DFA5A758201BA9F00015D550 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		DFBDCE4E2017D7A800610EEB /* Supporting Files */ = {
@@ -289,6 +300,7 @@
 				DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */,
 				DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */,
 				DF828305201A53160020421C /* CreateAccountVC.swift in Sources */,
+				DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */,
 				DFD014DA201A238800802771 /* LoginVC.swift in Sources */,
 				DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
