@@ -13,6 +13,8 @@
 		DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90382017C947000CBC3F /* LaunchScreen.storyboard */; };
 		DF828305201A53160020421C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF828304201A53160020421C /* CreateAccountVC.swift */; };
 		DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A758201BA9F00015D550 /* AuthService.swift */; };
+		DFA5A75B201BC3550015D550 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A75A201BC3550015D550 /* Extensions.swift */; };
+		DFA5A75E201BC7B80015D550 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A75D201BC7B80015D550 /* RoundedButton.swift */; };
 		DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE512017D7E600610EEB /* SWRevealViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE562017EF2400610EEB /* ChatVC.swift */; };
 		DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE582017EF3100610EEB /* ChannelVC.swift */; };
@@ -33,6 +35,8 @@
 		DF7A903B2017C947000CBC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF828304201A53160020421C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		DFA5A758201BA9F00015D550 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DFA5A75A201BC3550015D550 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DFA5A75D201BC7B80015D550 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "azChat-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFBDCE502017D7E600610EEB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DFBDCE512017D7E600610EEB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 				DFBDCE502017D7E600610EEB /* SWRevealViewController.h */,
 				DFBDCE512017D7E600610EEB /* SWRevealViewController.m */,
 				DFBDCE4F2017D7E500610EEB /* azChat-iOS-Bridging-Header.h */,
+				DFA5A75A201BC3550015D550 /* Extensions.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				DFBDCE5A2017FD9F00610EEB /* GradientView.swift */,
+				DFA5A75D201BC7B80015D550 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +308,8 @@
 				DF828305201A53160020421C /* CreateAccountVC.swift in Sources */,
 				DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */,
 				DFD014DA201A238800802771 /* LoginVC.swift in Sources */,
+				DFA5A75B201BC3550015D550 /* Extensions.swift in Sources */,
+				DFA5A75E201BC7B80015D550 /* RoundedButton.swift in Sources */,
 				DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
 				DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */,

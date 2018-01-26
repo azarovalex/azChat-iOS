@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-class AuthServie {
+class AuthService {
     
-    static let instance = AuthServie()
+    static let instance = AuthService()
     
     let defaults = UserDefaults.standard
     
@@ -54,7 +54,7 @@ class AuthServie {
             "password": password
         ]
         
-        Alamofire.request(BASE_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
+        Alamofire.request(REGISTER_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
             if response.result.error == nil {
                 completion(true)
             } else {

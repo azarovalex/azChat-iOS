@@ -13,7 +13,7 @@ typealias CompletionHandler = (_ success: Bool) -> Void
 // URL Constants
 // let BASE_URL = "http://localhost:3005/v1/"
 let BASE_URL = "https://az-chat.herokuapp.com/v1/"
-
+let REGISTER_URL = BASE_URL + "regiser"
 
 // Segues
 let TO_LOGIN = "toLogin"
