@@ -19,7 +19,7 @@ class RoundedButton: UIButton {
     
     override func awakeFromNib() {
         updateCornerRadius(cornerRadius)
-    }
+    } 
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()

@@ -8,8 +8,14 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class AuthService {
+    
+    //Constants
+    let header = [
+        "Content-Type": "application/json; charset=utf-8"
+    ]
     
     static let instance = AuthService()
     
@@ -43,24 +49,39 @@ class AuthService {
     }
     
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
-        
-        let lowercasedEmail = email.lowercased()
-        let header = [
-            "Content-Type": "application/json; charset=utf-8"
-        ]
-        
         let body: [String: Any] = [
-            "email": lowercasedEmail,
+            "email": email.lowercased(),
             "password": password
         ]
         
         Alamofire.request(REGISTER_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
-            if response.result.error == nil {
-                completion(true)
-            } else {
+            guard response.result.error == nil else {
                 completion(false)
                 debugPrint(response.result.error as Any)
+                return
             }
+            completion(true)
+        }
+    }
+    
+    func loginUser(email: String, password: String, completion: @escaping CompletionHandler) {
+        let body: [String: Any] = [
+            "email": email.lowercased(),
+            "password": password
+        ]
+        
+        Alamofire.request(LOGIN_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            guard response.result.error == nil, let data = response.data, let json = try? JSON(data: data) else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+                return
+            }
+            
+            self.authToken = json["token"].stringValue
+            self.userEmail = json["user"].stringValue
+            self.isLoggedIn = true
+            
+            completion(true)
         }
     }
 }
