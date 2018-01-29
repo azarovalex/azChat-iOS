@@ -21,6 +21,7 @@
 		DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE5A2017FD9F00610EEB /* GradientView.swift */; };
 		DFD014D8201A1F1700802771 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD014D7201A1F1700802771 /* Constants.swift */; };
 		DFD014DA201A238800802771 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD014D9201A238800802771 /* LoginVC.swift */; };
+		DFF7D37D201FBEE30014EB1B /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7D37C201FBEE30014EB1B /* UserDataService.swift */; };
 		E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		DFBDCE5A2017FD9F00610EEB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DFD014D7201A1F1700802771 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DFD014D9201A238800802771 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DFF7D37C201FBEE30014EB1B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DFA5A758201BA9F00015D550 /* AuthService.swift */,
+				DFF7D37C201FBEE30014EB1B /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */,
 				DFD014DA201A238800802771 /* LoginVC.swift in Sources */,
 				DFA5A75B201BC3550015D550 /* Extensions.swift in Sources */,
+				DFF7D37D201FBEE30014EB1B /* UserDataService.swift in Sources */,
 				DFA5A75E201BC7B80015D550 /* RoundedButton.swift in Sources */,
 				DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
