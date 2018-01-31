@@ -15,13 +15,16 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     // Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
+    var bgColor: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -29,6 +32,9 @@ class CreateAccountVC: UIViewController {
         if UserDataService.instance.avatarName != "" {
             avatarName = UserDataService.instance.avatarName
             userImg.image = UIImage(named: avatarName)
+            if avatarName.contains("light") && bgColor == nil {
+                userImg.backgroundColor = UIColor.lightGray
+            }
         }
     }
     
@@ -41,9 +47,24 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func generateBGBtnPressed(_ sender: Any) {
+        bgColor = UIColor(red: CGFloat(arc4random_uniform(255)) / 255, green: CGFloat(arc4random_uniform(255)) / 255, blue: CGFloat(arc4random_uniform(255)) / 255, alpha: 1)
+        UIView.animate(withDuration: 0.3) {
+            self.userImg.backgroundColor = self.bgColor
+        }
+    }
+    
+    func setUpView() {
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "E mail", attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
+        
+        spinner.isHidden = true
     }
     
     @IBAction func createAccountBtnPressed(_ sender: Any) {
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard let name = usernameTxt.text, usernameTxt.text != "" else { return }
         guard let email = emailTxt.text, emailTxt.text != "" else { return }
         guard let password = passwordTxt.text, passwordTxt.text != "" else { return }
@@ -54,8 +75,10 @@ class CreateAccountVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
-                                print(UserDataService.instance.name, UserDataService.instance.avatarName)
+                                self.spinner.isHidden = true
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+                                NotificationCenter.default.post(name: NOTIF_DATA_CHANGED, object: nil)
                             }
                         })
                     }
