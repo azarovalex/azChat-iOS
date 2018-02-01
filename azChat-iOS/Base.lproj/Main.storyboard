@@ -245,14 +245,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="mlo-MG-wdh">
                                 <rect key="frame" x="53" y="194" width="270" height="94"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8l-Yp-Mir">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8l-Yp-Mir">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="fu2-aK-Hv4"/>
                                         </constraints>
                                         <color key="textColor" red="0.25882352939999997" green="0.32156862749999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuS-H1-vNR">
                                         <rect key="frame" x="0.0" y="38" width="270" height="2"/>
@@ -292,7 +292,15 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="Lng-ge-CP1" eventType="touchUpInside" id="kxN-ZZ-FKR"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xXa-vL-s0G">
+                                <rect key="frame" x="170" y="223" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.29411764709999999" green="0.31764705879999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -310,6 +318,9 @@
                         <viewLayoutGuide key="safeArea" id="aFh-wr-f5e"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="X8l-Yp-Mir" id="NMf-O2-suy"/>
+                        <outlet property="passwordTxt" destination="KgV-oL-qCH" id="xvU-L6-ymr"/>
+                        <outlet property="spinner" destination="xXa-vL-s0G" id="HCv-b5-xmX"/>
                         <segue destination="ryl-BM-4nn" kind="show" identifier="toCreateAccount" id="Pd5-PN-exy"/>
                     </connections>
                 </viewController>
@@ -437,13 +448,13 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-ao-OMZ">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <rect key="frame" x="169" y="183" width="37" height="37"/>
                                 <color key="color" red="0.25882352939999997" green="0.32156862749999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SSN-ao-OMZ" firstAttribute="centerY" secondItem="sYe-LD-Voj" secondAttribute="centerY" id="AlU-zE-wpb"/>
+                            <constraint firstItem="SSN-ao-OMZ" firstAttribute="centerY" secondItem="sYe-LD-Voj" secondAttribute="centerY" constant="-132" id="AlU-zE-wpb"/>
                             <constraint firstItem="cmP-Jr-MSK" firstAttribute="top" secondItem="Hz7-j6-YXg" secondAttribute="bottom" constant="8" id="DgD-mX-CRn"/>
                             <constraint firstItem="xpq-QR-kab" firstAttribute="bottom" secondItem="W5o-b1-0zM" secondAttribute="bottom" constant="20" id="HZB-bB-GVd"/>
                             <constraint firstItem="tQM-vF-ixi" firstAttribute="top" secondItem="cmP-Jr-MSK" secondAttribute="bottom" id="QFD-x2-uK8"/>

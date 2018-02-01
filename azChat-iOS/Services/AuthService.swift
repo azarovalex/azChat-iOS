@@ -10,12 +10,16 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+//Constants
+let header = [
+    "Content-Type": "application/json; charset=utf-8"
+]
+let bearerHeader = [
+    "Authorization": "Bearer \(AuthService.instance.authToken)",
+    "Content-Type": "application/json; charset=utf-8"
+]
+
 class AuthService {
-    
-    //Constants
-    let header = [
-        "Content-Type": "application/json; charset=utf-8"
-    ]
     
     static let instance = AuthService()
     
@@ -93,12 +97,7 @@ class AuthService {
             "avatarColor": avatarColor
         ]
         
-        let header = [
-            "Authorization": "Bearer \(AuthService.instance.authToken)",
-            "Content-Type": "application/json; charset=utf-8"
-        ]
-        
-        Alamofire.request(USER_ADD_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+        Alamofire.request(USER_ADD_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: bearerHeader).responseJSON { (response) in
             guard response.result.error == nil, let data = response.data, let json = try? JSON(data: data) else {
                 completion(false)
                 debugPrint(response.result.error as Any)
@@ -108,7 +107,19 @@ class AuthService {
             UserDataService.instance.setUserData(id: json["_id"].stringValue, avatarColor: json["avatarColor"].stringValue, avatarName: json["avatarName"].stringValue, email: json["email"].stringValue, name: json["name"].stringValue)
             completion(true)
         }
-        
+    }
+    
+    func findUserByEmail(completion: @escaping CompletionHandler) {
+        Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: bearerHeader).responseJSON { (response) in
+            guard response.result.error == nil, let data = response.data, let json = try? JSON(data: data) else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+                return
+            }
+            
+            UserDataService.instance.setUserData(id: json["_id"].stringValue, avatarColor: json["avatarColor"].stringValue, avatarName: json["avatarName"].stringValue, email: json["email"].stringValue, name: json["name"].stringValue)
+            completion(true)
+        }
     }
 }
 

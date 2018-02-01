@@ -15,6 +15,7 @@ let BASE_URL = "https://az-chat.herokuapp.com/v1/"
 let REGISTER_URL = BASE_URL + "account/register"
 let LOGIN_URL = BASE_URL + "account/login"
 let USER_ADD_URL = BASE_URL + "user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 
 // Notification
 let NOTIF_DATA_CHANGED = Notification.Name("notifDataChanged")
