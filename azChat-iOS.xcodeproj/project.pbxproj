@@ -20,6 +20,8 @@
 		DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE582017EF3100610EEB /* ChannelVC.swift */; };
 		DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDCE5A2017FD9F00610EEB /* GradientView.swift */; };
 		DFBEEA19202253B000DCB859 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBEEA18202253B000DCB859 /* CircleImage.swift */; };
+		DFBEEA1C20239BC300DCB859 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBEEA1A20239BC300DCB859 /* ProfileVC.swift */; };
+		DFBEEA1D20239BC300DCB859 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBEEA1B20239BC300DCB859 /* ProfileVC.xib */; };
 		DFD014D8201A1F1700802771 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD014D7201A1F1700802771 /* Constants.swift */; };
 		DFD014DA201A238800802771 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD014D9201A238800802771 /* LoginVC.swift */; };
 		DFF7D37D201FBEE30014EB1B /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7D37C201FBEE30014EB1B /* UserDataService.swift */; };
@@ -48,6 +50,8 @@
 		DFBDCE582017EF3100610EEB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		DFBDCE5A2017FD9F00610EEB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DFBEEA18202253B000DCB859 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		DFBEEA1A20239BC300DCB859 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		DFBEEA1B20239BC300DCB859 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		DFD014D7201A1F1700802771 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DFD014D9201A238800802771 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DFF7D37C201FBEE30014EB1B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		DF7A902E2017C947000CBC3F /* azChat-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DFBEEA1E20239BE000DCB859 /* XIBs */,
 				DFA5A757201BA9D30015D550 /* Services */,
 				DFD014D6201A1F0100802771 /* Utilities */,
 				DFBDCE552017EF0700610EEB /* Model */,
@@ -149,6 +154,7 @@
 				DFD014D9201A238800802771 /* LoginVC.swift */,
 				DF828304201A53160020421C /* CreateAccountVC.swift */,
 				DFF7D37E201FDE800014EB1B /* AvatarPickerVC.swift */,
+				DFBEEA1A20239BC300DCB859 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +175,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DFBEEA1E20239BE000DCB859 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				DFBEEA1B20239BC300DCB859 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		DFD014D6201A1F0100802771 /* Utilities */ = {
@@ -242,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBEEA1D20239BC300DCB859 /* ProfileVC.xib in Resources */,
 				DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */,
 				DF7A90372017C947000CBC3F /* Assets.xcassets in Resources */,
 				DF7A90352017C947000CBC3F /* Main.storyboard in Resources */,
@@ -319,6 +334,7 @@
 				DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */,
 				DFF7D381201FDFE70014EB1B /* AvatarCell.swift in Sources */,
 				DF828305201A53160020421C /* CreateAccountVC.swift in Sources */,
+				DFBEEA1C20239BC300DCB859 /* ProfileVC.swift in Sources */,
 				DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */,
 				DFD014DA201A238800802771 /* LoginVC.swift in Sources */,
 				DFA5A75B201BC3550015D550 /* Extensions.swift in Sources */,

@@ -27,13 +27,19 @@ class ChannelVC: UIViewController {
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         } else {
             loginBtn.setTitle("Login", for: .normal)
-            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            userImg.image = UIImage(named: "profileDefault")
             userImg.backgroundColor = UIColor.clear
         }
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        if AuthService.instance.isLoggedIn {
+            let profile = ProfileVC()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
     }
     
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
