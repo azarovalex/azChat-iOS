@@ -58,7 +58,7 @@ class AuthService {
             "password": password
         ]
         
-        Alamofire.request(REGISTER_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
+        Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
             guard response.result.error == nil else {
                 completion(false)
                 debugPrint(response.result.error as Any)
@@ -74,7 +74,7 @@ class AuthService {
             "password": password
         ]
         
-        Alamofire.request(LOGIN_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+        Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             guard response.result.error == nil, let data = response.data, let json = try? JSON(data: data) else {
                 completion(false)
                 debugPrint(response.result.error as Any)
@@ -97,7 +97,7 @@ class AuthService {
             "avatarColor": avatarColor
         ]
         
-        Alamofire.request(USER_ADD_URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: bearerHeader).responseJSON { (response) in
+        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: bearerHeader).responseJSON { (response) in
             guard response.result.error == nil, let data = response.data, let json = try? JSON(data: data) else {
                 completion(false)
                 debugPrint(response.result.error as Any)

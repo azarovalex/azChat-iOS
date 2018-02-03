@@ -11,11 +11,12 @@ import Foundation
 typealias CompletionHandler = (_ success: Bool) -> Void
 
 // URL Constants
-let BASE_URL = "https://az-chat.herokuapp.com/v1/"
-let REGISTER_URL = BASE_URL + "account/register"
-let LOGIN_URL = BASE_URL + "account/login"
-let USER_ADD_URL = BASE_URL + "user/add"
-let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
+let URL_BASE = "https://az-chat.herokuapp.com/v1/"
+let URL_REGISTER = URL_BASE + "account/register"
+let URL_LOGIN = URL_BASE + "account/login"
+let URL_USER_ADD = URL_BASE + "user/add"
+let URL_USER_BY_EMAIL = "\(URL_BASE)user/byEmail/"
+let URL_GET_CHANNELS = "\(URL_BASE)channel/"
 
 // Notification
 let NOTIF_DATA_CHANGED = Notification.Name("notifDataChanged")

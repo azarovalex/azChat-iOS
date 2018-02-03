@@ -12,6 +12,9 @@
 		DF7A90372017C947000CBC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90362017C947000CBC3F /* Assets.xcassets */; };
 		DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A90382017C947000CBC3F /* LaunchScreen.storyboard */; };
 		DF828305201A53160020421C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF828304201A53160020421C /* CreateAccountVC.swift */; };
+		DF8DC5AF202641DE00B9B299 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8DC5AE202641DE00B9B299 /* ChannelCell.swift */; };
+		DF9944DA2023DBD100953A05 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9944D92023DBD100953A05 /* MessageService.swift */; };
+		DF9944DC2023DC0200953A05 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9944DB2023DC0200953A05 /* Channel.swift */; };
 		DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A758201BA9F00015D550 /* AuthService.swift */; };
 		DFA5A75B201BC3550015D550 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A75A201BC3550015D550 /* Extensions.swift */; };
 		DFA5A75E201BC7B80015D550 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5A75D201BC7B80015D550 /* RoundedButton.swift */; };
@@ -40,6 +43,9 @@
 		DF7A90392017C947000CBC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF7A903B2017C947000CBC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF828304201A53160020421C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		DF8DC5AE202641DE00B9B299 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		DF9944D92023DBD100953A05 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		DF9944DB2023DC0200953A05 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		DFA5A758201BA9F00015D550 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DFA5A75A201BC3550015D550 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DFA5A75D201BC7B80015D550 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 			children = (
 				DFA5A758201BA9F00015D550 /* AuthService.swift */,
 				DFF7D37C201FBEE30014EB1B /* UserDataService.swift */,
+				DF9944D92023DBD100953A05 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 				DFA5A75D201BC7B80015D550 /* RoundedButton.swift */,
 				DFF7D380201FDFE70014EB1B /* AvatarCell.swift */,
 				DFBEEA18202253B000DCB859 /* CircleImage.swift */,
+				DF8DC5AE202641DE00B9B299 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 		DFBDCE552017EF0700610EEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF9944DB2023DC0200953A05 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,8 +345,11 @@
 				DF828305201A53160020421C /* CreateAccountVC.swift in Sources */,
 				DFBEEA1C20239BC300DCB859 /* ProfileVC.swift in Sources */,
 				DFA5A759201BA9F00015D550 /* AuthService.swift in Sources */,
+				DF9944DA2023DBD100953A05 /* MessageService.swift in Sources */,
+				DF9944DC2023DC0200953A05 /* Channel.swift in Sources */,
 				DFD014DA201A238800802771 /* LoginVC.swift in Sources */,
 				DFA5A75B201BC3550015D550 /* Extensions.swift in Sources */,
+				DF8DC5AF202641DE00B9B299 /* ChannelCell.swift in Sources */,
 				DFF7D37D201FBEE30014EB1B /* UserDataService.swift in Sources */,
 				DFA5A75E201BC7B80015D550 /* RoundedButton.swift in Sources */,
 				DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */,
