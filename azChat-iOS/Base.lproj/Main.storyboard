@@ -110,6 +110,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-Wy-wgE">
                                 <rect key="frame" x="281" y="100.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelBtnClicked:" destination="uIL-Zs-w8D" eventType="touchUpInside" id="abm-uW-8zp"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ON4-AT-96T" customClass="CircleImage" customModule="azChat_iOS" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>

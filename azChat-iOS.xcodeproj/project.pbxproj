@@ -31,6 +31,8 @@
 		DFF7D37F201FDE800014EB1B /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7D37E201FDE800014EB1B /* AvatarPickerVC.swift */; };
 		DFF7D381201FDFE70014EB1B /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7D380201FDFE70014EB1B /* AvatarCell.swift */; };
 		E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */; };
+		ECB6A9662028E53B00516A28 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6A9642028E53B00516A28 /* AddChannelVC.swift */; };
+		ECB6A9672028E53B00516A28 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB6A9652028E53B00516A28 /* AddChannelVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		DFF7D37C201FBEE30014EB1B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		DFF7D37E201FDE800014EB1B /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		DFF7D380201FDFE70014EB1B /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		ECB6A9642028E53B00516A28 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		ECB6A9652028E53B00516A28 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +166,7 @@
 				DF828304201A53160020421C /* CreateAccountVC.swift */,
 				DFF7D37E201FDE800014EB1B /* AvatarPickerVC.swift */,
 				DFBEEA1A20239BC300DCB859 /* ProfileVC.swift */,
+				ECB6A9642028E53B00516A28 /* AddChannelVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				DFBEEA1B20239BC300DCB859 /* ProfileVC.xib */,
+				ECB6A9652028E53B00516A28 /* AddChannelVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB6A9672028E53B00516A28 /* AddChannelVC.xib in Resources */,
 				DFBEEA1D20239BC300DCB859 /* ProfileVC.xib in Resources */,
 				DF7A903A2017C947000CBC3F /* LaunchScreen.storyboard in Resources */,
 				DF7A90372017C947000CBC3F /* Assets.xcassets in Resources */,
@@ -355,6 +362,7 @@
 				DFBDCE5B2017FD9F00610EEB /* GradientView.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
 				DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */,
+				ECB6A9662028E53B00516A28 /* AddChannelVC.swift in Sources */,
 				DFD014D8201A1F1700802771 /* Constants.swift in Sources */,
 				DFF7D37F201FDE800014EB1B /* AvatarPickerVC.swift in Sources */,
 				DFBEEA19202253B000DCB859 /* CircleImage.swift in Sources */,
