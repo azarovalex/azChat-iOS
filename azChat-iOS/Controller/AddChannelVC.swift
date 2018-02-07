@@ -34,7 +34,6 @@ class AddChannelVC: UIViewController {
         
         nameTxt.attributedPlaceholder = NSAttributedString(string: "Channel name", attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
         channelDescTxt.attributedPlaceholder = NSAttributedString(string: "Description", attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
-
     }
     
     @objc func closeTap() {
