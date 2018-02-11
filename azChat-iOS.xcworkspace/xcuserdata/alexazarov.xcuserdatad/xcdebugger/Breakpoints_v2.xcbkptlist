@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+            timestampString = "539730501.160602"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "emit(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketIO.SocketIOClient.emit(Swift.String, SocketIO.SocketData...) -&gt; ()"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexazarov/Developer/azChat-iOS/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539730501.479133"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "395">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () -&gt; Swift.String in SocketIO.SocketIOClient.emit(Swift.String, SocketIO.SocketData...) -&gt; ()"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexazarov/Developer/azChat-iOS/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539730501.488719"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketIO.SocketIOClient.emit(Swift.String, SocketIO.SocketData...) -&gt; ()"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexazarov/Developer/azChat-iOS/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539730501.5684"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () -&gt; Swift.String in SocketIO.SocketIOClient.emit(Swift.String, SocketIO.SocketData...) -&gt; ()"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexazarov/Developer/azChat-iOS/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539730501.573649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

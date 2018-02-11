@@ -16,7 +16,8 @@ class SocketService: NSObject {
         super.init()
     }
     
-    var socket: SocketIOClient = SocketManager(socketURL: URL(string: URL_BASE)!).defaultSocket
+    lazy var manager = SocketManager(socketURL: URL(string: URL_BASE)!)
+    lazy var socket = manager.defaultSocket
     
     func establichConnection() {
         socket.connect()
@@ -25,5 +26,24 @@ class SocketService: NSObject {
     func closeConnection() {
         socket.disconnect()
     }
+    
+    func addChannel(channelName: String, channelDescription: String, completion: @escaping CompletionHandler) {
+        socket.connect()
+        socket.emit("newChannel", channelName, channelDescription)
+        completion(true)
+    }
+    
+    func getChannel(completion: @escaping CompletionHandler) {
+        socket.on("channelCreated") { (dataArray, ack) in
+            guard let channelName = dataArray[0] as? String else { return }
+            guard let channelDesc = dataArray[1] as? String else { return }
+            guard let channelId = dataArray[2] as? String else { return }
+            
+            let newChannel = Channel(channelTitle: channelName, channelDescription: channelDesc, id: channelId)
+            MessageService.instance.channels.append(newChannel)
+            completion(true)
+        }
+    }
+    
     
 }
