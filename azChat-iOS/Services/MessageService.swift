@@ -34,6 +34,7 @@ class MessageService {
                 let channel = Channel(channelTitle: name, channelDescription: description, id: id)
                 self.channels.append(channel)
             }
+            NotificationCenter.default.post(name: NOTIF_CHANNELS_LOADED, object: nil)
             completion(true)
         }
     }

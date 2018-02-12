@@ -20,6 +20,8 @@ let URL_GET_CHANNELS = "\(URL_BASE)channel/"
 
 // Notification
 let NOTIF_DATA_CHANGED = Notification.Name("notifDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name(rawValue: "notifChannelsLoaded")
+let NOTIF_CHANNEL_SELECTED = Notification.Name(rawValue: "notifChannelSelected")
 
 // Colors
 let placeholderColor = #colorLiteral(red: 0, green: 0.2684682608, blue: 0.4762560725, alpha: 0.5)
