@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
         <array key="AvenirNext.ttc">
             <string>AvenirNext-DemiBold</string>
             <string>AvenirNext-Medium</string>
@@ -72,18 +75,40 @@
                                     <constraint firstItem="rgI-gd-SiG" firstAttribute="centerX" secondItem="Znp-Ak-txx" secondAttribute="centerX" id="smO-i8-HpU"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDK-8v-F4Q">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6WQ-5i-nSL"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-l4-aLL">
+                                <rect key="frame" x="339" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMessagePressed:" destination="mlj-KQ-di9" eventType="touchUpInside" id="EsA-Gx-aO8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Znp-Ak-txx" firstAttribute="leading" secondItem="kal-Xo-P4V" secondAttribute="leading" id="1kV-U6-g19"/>
                             <constraint firstItem="Znp-Ak-txx" firstAttribute="trailing" secondItem="kal-Xo-P4V" secondAttribute="trailing" id="7Xt-pi-7Jd"/>
+                            <constraint firstItem="kal-Xo-P4V" firstAttribute="trailing" secondItem="pNC-l4-aLL" secondAttribute="trailing" constant="6" id="GuQ-Ou-nb6"/>
                             <constraint firstItem="Znp-Ak-txx" firstAttribute="top" secondItem="W5o-pN-wNG" secondAttribute="top" id="ajU-UM-bLx"/>
+                            <constraint firstItem="pNC-l4-aLL" firstAttribute="centerY" secondItem="LDK-8v-F4Q" secondAttribute="centerY" id="fCl-Aa-VtT"/>
+                            <constraint firstItem="LDK-8v-F4Q" firstAttribute="bottom" secondItem="kal-Xo-P4V" secondAttribute="bottom" id="nXR-ys-Yp3"/>
+                            <constraint firstItem="kal-Xo-P4V" firstAttribute="trailing" secondItem="LDK-8v-F4Q" secondAttribute="trailing" id="rH4-fx-gVb"/>
+                            <constraint firstItem="LDK-8v-F4Q" firstAttribute="leading" secondItem="kal-Xo-P4V" secondAttribute="leading" id="zH6-8b-r1s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kal-Xo-P4V"/>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="rgI-gd-SiG" id="x6P-tu-5Q0"/>
                         <outlet property="menuBtn" destination="NLh-3E-J3E" id="asW-us-bCs"/>
+                        <outlet property="messageTxt" destination="LDK-8v-F4Q" id="dg0-c6-Enx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WN-BD-3q9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -592,6 +617,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>

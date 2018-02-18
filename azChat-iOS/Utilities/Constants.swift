@@ -17,6 +17,7 @@ let URL_LOGIN = URL_BASE + "account/login"
 let URL_USER_ADD = URL_BASE + "user/add"
 let URL_USER_BY_EMAIL = "\(URL_BASE)user/byEmail/"
 let URL_GET_CHANNELS = "\(URL_BASE)channel/"
+let URL_GET_MESSAGES = "\(URL_BASE)message/byChannel/"
 
 // Notification
 let NOTIF_DATA_CHANGED = Notification.Name("notifDataChanged")

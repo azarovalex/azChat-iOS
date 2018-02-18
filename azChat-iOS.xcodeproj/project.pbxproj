@@ -31,9 +31,11 @@
 		DFF7D37F201FDE800014EB1B /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7D37E201FDE800014EB1B /* AvatarPickerVC.swift */; };
 		DFF7D381201FDFE70014EB1B /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7D380201FDFE70014EB1B /* AvatarCell.swift */; };
 		E33911870E2641C0886332C4 /* Pods_azChat_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */; };
+		EC4F9A1A2039EA0D00398085 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F9A192039EA0D00398085 /* KeyboardBoundView.swift */; };
 		EC87DB50202A3FC9003CC27B /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87DB4F202A3FC9003CC27B /* SocketService.swift */; };
 		ECB6A9662028E53B00516A28 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6A9642028E53B00516A28 /* AddChannelVC.swift */; };
 		ECB6A9672028E53B00516A28 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB6A9652028E53B00516A28 /* AddChannelVC.xib */; };
+		ECF090AF2033755A0008CD67 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF090AE2033755A0008CD67 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +68,11 @@
 		DFF7D37C201FBEE30014EB1B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		DFF7D37E201FDE800014EB1B /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		DFF7D380201FDFE70014EB1B /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		EC4F9A192039EA0D00398085 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		EC87DB4F202A3FC9003CC27B /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		ECB6A9642028E53B00516A28 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		ECB6A9652028E53B00516A28 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		ECF090AE2033755A0008CD67 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +181,7 @@
 		DFBDCE542017EEFC00610EEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC4F9A192039EA0D00398085 /* KeyboardBoundView.swift */,
 				DFBDCE5A2017FD9F00610EEB /* GradientView.swift */,
 				DFA5A75D201BC7B80015D550 /* RoundedButton.swift */,
 				DFF7D380201FDFE70014EB1B /* AvatarCell.swift */,
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9944DB2023DC0200953A05 /* Channel.swift */,
+				ECF090AE2033755A0008CD67 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			files = (
 				DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */,
 				DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */,
+				EC4F9A1A2039EA0D00398085 /* KeyboardBoundView.swift in Sources */,
 				DFF7D381201FDFE70014EB1B /* AvatarCell.swift in Sources */,
 				DF828305201A53160020421C /* CreateAccountVC.swift in Sources */,
 				DFBEEA1C20239BC300DCB859 /* ProfileVC.swift in Sources */,
@@ -366,6 +373,7 @@
 				EC87DB50202A3FC9003CC27B /* SocketService.swift in Sources */,
 				DF7A90302017C947000CBC3F /* AppDelegate.swift in Sources */,
 				DFBDCE522017D7E600610EEB /* SWRevealViewController.m in Sources */,
+				ECF090AF2033755A0008CD67 /* Message.swift in Sources */,
 				ECB6A9662028E53B00516A28 /* AddChannelVC.swift in Sources */,
 				DFD014D8201A1F1700802771 /* Constants.swift in Sources */,
 				DFF7D37F201FDE800014EB1B /* AvatarPickerVC.swift in Sources */,
