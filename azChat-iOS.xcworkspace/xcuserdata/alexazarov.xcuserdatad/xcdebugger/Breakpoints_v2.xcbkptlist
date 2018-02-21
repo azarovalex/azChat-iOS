@@ -26,12 +26,12 @@
                   moduleName = "SocketIO"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/alexazarov/Developer/azChat-iOS/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
-                  timestampString = "540666959.5971299"
+                  timestampString = "540929552.581548"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "206"
                   endingLineNumber = "206"
-                  offsetFromSymbolStart = "344">
+                  offsetFromSymbolStart = "328">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,12 +41,12 @@
                   moduleName = "SocketIO"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/alexazarov/Developer/azChat-iOS/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
-                  timestampString = "540666959.60296"
+                  timestampString = "540929552.587713"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "206"
                   endingLineNumber = "206"
-                  offsetFromSymbolStart = "32">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>

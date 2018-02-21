@@ -35,6 +35,7 @@
 		EC87DB50202A3FC9003CC27B /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87DB4F202A3FC9003CC27B /* SocketService.swift */; };
 		ECB6A9662028E53B00516A28 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6A9642028E53B00516A28 /* AddChannelVC.swift */; };
 		ECB6A9672028E53B00516A28 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB6A9652028E53B00516A28 /* AddChannelVC.xib */; };
+		ECB77AEF203DCB8C00D0ECF7 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB77AEE203DCB8C00D0ECF7 /* MessageCell.swift */; };
 		ECF090AF2033755A0008CD67 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF090AE2033755A0008CD67 /* Message.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		EC87DB4F202A3FC9003CC27B /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		ECB6A9642028E53B00516A28 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		ECB6A9652028E53B00516A28 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		ECB77AEE203DCB8C00D0ECF7 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		ECF090AE2033755A0008CD67 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F68D95B5F7567EFD9525A329 /* Pods_azChat_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_azChat_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +189,7 @@
 				DFF7D380201FDFE70014EB1B /* AvatarCell.swift */,
 				DFBEEA18202253B000DCB859 /* CircleImage.swift */,
 				DF8DC5AE202641DE00B9B299 /* ChannelCell.swift */,
+				ECB77AEE203DCB8C00D0ECF7 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Alex Azarov";
 				TargetAttributes = {
 					DF7A902B2017C947000CBC3F = {
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFBDCE592017EF3100610EEB /* ChannelVC.swift in Sources */,
+				ECB77AEF203DCB8C00D0ECF7 /* MessageCell.swift in Sources */,
 				DFBDCE572017EF2400610EEB /* ChatVC.swift in Sources */,
 				EC4F9A1A2039EA0D00398085 /* KeyboardBoundView.swift in Sources */,
 				DFF7D381201FDFE70014EB1B /* AvatarCell.swift in Sources */,
@@ -417,6 +421,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -424,6 +429,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -474,6 +480,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -481,6 +488,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
