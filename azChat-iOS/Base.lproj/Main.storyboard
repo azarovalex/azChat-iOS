@@ -144,18 +144,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRo-l4-Csa">
+                                <rect key="frame" x="8" y="624" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="L68-Q5-wEa" firstAttribute="leading" secondItem="kal-Xo-P4V" secondAttribute="leading" id="1I5-zd-zuI"/>
                             <constraint firstItem="Znp-Ak-txx" firstAttribute="leading" secondItem="kal-Xo-P4V" secondAttribute="leading" id="1kV-U6-g19"/>
                             <constraint firstItem="Znp-Ak-txx" firstAttribute="trailing" secondItem="kal-Xo-P4V" secondAttribute="trailing" id="7Xt-pi-7Jd"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SRo-l4-Csa" secondAttribute="trailing" constant="20" symbolic="YES" id="9Lg-4c-z7U"/>
                             <constraint firstItem="kal-Xo-P4V" firstAttribute="trailing" secondItem="pNC-l4-aLL" secondAttribute="trailing" constant="6" id="GuQ-Ou-nb6"/>
+                            <constraint firstItem="LDK-8v-F4Q" firstAttribute="top" secondItem="SRo-l4-Csa" secondAttribute="bottom" constant="3" id="Zwt-i8-yta"/>
                             <constraint firstItem="Znp-Ak-txx" firstAttribute="top" secondItem="W5o-pN-wNG" secondAttribute="top" id="ajU-UM-bLx"/>
                             <constraint firstItem="pNC-l4-aLL" firstAttribute="centerY" secondItem="LDK-8v-F4Q" secondAttribute="centerY" id="fCl-Aa-VtT"/>
                             <constraint firstItem="kal-Xo-P4V" firstAttribute="trailing" secondItem="L68-Q5-wEa" secondAttribute="trailing" id="fKA-Aa-sd4"/>
                             <constraint firstItem="LDK-8v-F4Q" firstAttribute="bottom" secondItem="kal-Xo-P4V" secondAttribute="bottom" id="nXR-ys-Yp3"/>
                             <constraint firstItem="LDK-8v-F4Q" firstAttribute="top" secondItem="L68-Q5-wEa" secondAttribute="bottom" constant="30" id="ndN-hz-BKY"/>
+                            <constraint firstItem="SRo-l4-Csa" firstAttribute="leading" secondItem="kal-Xo-P4V" secondAttribute="leading" constant="8" id="qRD-kY-osO"/>
                             <constraint firstItem="kal-Xo-P4V" firstAttribute="trailing" secondItem="LDK-8v-F4Q" secondAttribute="trailing" id="rH4-fx-gVb"/>
                             <constraint firstItem="L68-Q5-wEa" firstAttribute="top" secondItem="Znp-Ak-txx" secondAttribute="bottom" id="y5h-BQ-3NN"/>
                             <constraint firstItem="LDK-8v-F4Q" firstAttribute="leading" secondItem="kal-Xo-P4V" secondAttribute="leading" id="zH6-8b-r1s"/>
@@ -168,6 +177,7 @@
                         <outlet property="messageTxt" destination="LDK-8v-F4Q" id="dg0-c6-Enx"/>
                         <outlet property="sendMessageBtn" destination="pNC-l4-aLL" id="d5s-YS-ZNx"/>
                         <outlet property="tableView" destination="L68-Q5-wEa" id="6tg-gH-4OG"/>
+                        <outlet property="typingLbl" destination="SRo-l4-Csa" id="Lc3-da-tKO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WN-BD-3q9" userLabel="First Responder" sceneMemberID="firstResponder"/>
