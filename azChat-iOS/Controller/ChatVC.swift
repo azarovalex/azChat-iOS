@@ -32,6 +32,14 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChanged(_:)), name: NOTIF_DATA_CHANGED, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNEL_SELECTED, object: nil)
         
+        SocketService.instance.getChatMessages { (success) in
+            if success {
+                self.tableView.reloadData()
+                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
+                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
+            }
+        }
+        
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: { (success) in
                 NotificationCenter.default.post(name: NOTIF_DATA_CHANGED, object: nil)
@@ -45,7 +53,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @objc func userDataDidChanged(_ notif: Notification) {
         if AuthService.instance.isLoggedIn {
-            // Get channels
             onLoginGetMessages()
         } else {
             channelNameLbl.text = "Please Log In"
